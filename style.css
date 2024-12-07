@@ -56,15 +56,18 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-/* Centraliza e alinha o grid */
+/* Centraliza e adiciona bordas na página de produtos */
 .container-produtos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
   max-width: 1200px; /* Limite de largura */
-  margin: 0 auto; /* Centraliza na página */
-  justify-items: center; /* Centraliza os itens do grid */
+  margin: 40px auto; /* Centraliza o container na página */
+  border: 5px solid #3498db; /* Adiciona borda ao redor */
+  border-radius: 10px; /* Bordas arredondadas */
+  background: #fff; /* Fundo branco para contraste */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .produto {
