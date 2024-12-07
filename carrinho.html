@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .carrinho {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left;
+            padding-left: 20px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        h3 {
+            text-align: right; 
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #cancelar {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #dc3545;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #cancelar:hover {
+    animation: fugir 1.5s ease-in-out forwards;
+}
+
+@keyframes fugir {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(150px, -50px); }
+    40% { transform: translate(-200px, 80px); }
+    60% { transform: translate(250px, -120px); }
+    80% { transform: translate(-150px, 150px); }
+    100% { transform: translate(200px, -80px); }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Loja Virtual - Carrinho</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carrinho">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Criação de Loja Virtual 1</td>
+                    <td>1</td>
+                    <td>R$ 999,00</td>
+                    <td>R$ 999,00</td>
+                </tr>
+                <tr>
+                    <td>Criação de Loja Virtual 2</td>
+                    <td>2</td>
+                    <td>R$ 500,00</td>
+                    <td>R$ 1000,00</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Total: R$ 1999,00 (Acredite, vale cada centavo)</h3>
+        <button>Finalizar Compra</button>
+        <button id="cancelar">Cancelar Compra</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loja Virtual - Não prometemos milagres, mas fazemos mágica</p>
+    </footer>
+
+</body>
+</html>
