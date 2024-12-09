@@ -58,11 +58,15 @@ nav ul li a:hover {
 }
 
 .destaques {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 200px));
-    gap: 40px;
-    padding: 40px 20px;
     animation: fadeInUp 1s ease-in-out;
+}
+
+.container-produtos {
+    display: grid;
+    justify-content: center
+    grid-template-columns: repeat(auto-fit, minmax(auto,200px));
+    gap: 20px;
+    padding: 10px 20px;
 }
 .produto {
     background-color: #fff;
