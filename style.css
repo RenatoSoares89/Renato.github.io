@@ -223,25 +223,31 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    header {
-        padding: 20px 10px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
+    .container-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 15px;
     }
 
+    nav ul {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
     nav ul li a {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .produto {
+        padding: 10px;
     }
 
     .produto h3 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .produto p {
@@ -249,31 +255,12 @@ footer p {
     }
 
     .produto a {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 8px 15px;
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    .produto h3 {
-        font-size: 1.2rem;
-    }
-
-    .produto a {
-        padding: 8px 15px;
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 600px) {
     .produto-detalhes {
         flex-direction: column;
         text-align: center;
@@ -282,5 +269,26 @@ footer p {
     .produto-detalhes img {
         width: 100%;
         max-width: 300px;
+    }
+
+    .produto-detalhes h2 {
+        font-size: 1.3rem;
+    }
+
+    .produto-detalhes p {
+        font-size: 0.85rem;
+    }
+
+    .produto-detalhes button {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
     }
 }
