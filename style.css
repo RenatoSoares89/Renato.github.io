@@ -1,4 +1,4 @@
-
+8
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 .container-produtos {
     display: grid;
-    justify-content: center
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(auto,200px));
     gap: 20px;
     padding: 10px 20px;
@@ -188,11 +188,6 @@ footer p {
 
     nav ul li a {
         font-size: 1rem;
-    }
-
-    .destaques {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        padding: 20px 10px;
     }
 
     .produto h3 {
