@@ -65,6 +65,13 @@ nav ul li a:hover {
     animation: fadeInUp 1s ease-in-out;
 }
 
+.container-produtos {
+    display: grid;
+    justify-contante: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200));
+    gap: 20px;
+    padding: 10px 20px;
+}
 .produto {
     background-color: #fff;
     padding: 20px;
