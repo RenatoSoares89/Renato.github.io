@@ -67,7 +67,7 @@ nav ul li a:hover {
 
 .container-produtos {
     display: grid;
-    justify-contante: center;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(auto, 200));
     gap: 20px;
     padding: 10px 20px;
